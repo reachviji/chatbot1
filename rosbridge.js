@@ -44,7 +44,7 @@ function senddatatows(speech) {
 	
 	/*webSocket Cloud options*/ 
 	var ws_client_state = "offline"; 
-	var ws = var ws = new WebSocket('wss://ws-broadcast-server-d062507.cfapps.eu10.hana.ondemand.com'); 
+	var ws = new WebSocket('wss://ws-broadcast-server-d062507.cfapps.eu10.hana.ondemand.com'); 
  
 	ws.on('open', function open() { 
 		ws.send(speech); 
@@ -101,3 +101,7 @@ function senddatatows(speech) {
 	 
  
 }
+
+restService.listen((process.env.PORT || 9090), function() {
+    console.log("Server up and listening");
+});
