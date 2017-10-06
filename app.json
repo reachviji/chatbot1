@@ -1,0 +1,6 @@
+{
+  "name": "BOT_TO_ROS",
+  "description": "Bot to ROS Bridge",
+  "repository": "https://github.com/reachviji/command.git",
+  "keywords": ["api.ai", "natural language"]
+}
