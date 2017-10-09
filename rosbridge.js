@@ -38,9 +38,9 @@ function senddatatows(speech) {
 	var no_skipping_factor = 1; 
 	/*ROS-bridge endpoint*/ 
 	
-	/*var ros = new ROSLIB.Ros({
+	var ros = new ROSLIB.Ros({
 		url : 'ws://localhost:9090'
-	}); */
+	});
 	
 	/*webSocket Cloud options*/ 
 	var ws_client_state = "offline"; 
