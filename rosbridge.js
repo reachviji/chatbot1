@@ -2,6 +2,7 @@
  
  
 var WebSocket = require('ws'); 
+var ROSLIB = require('roslib'); 
 const express = require('express'); 
 const bodyParser = require('body-parser'); 
 const restService = express(); 
@@ -31,9 +32,7 @@ restService.post('/echo', function(req, res) {
 });
  
 function senddatatows(speech) {
-	var ROSLIB = require('roslib'); 
-	var WebSocket = require('ws');
- 
+
 	/* Load application settings */  
 	var no_skipping_factor = 1; 
 	/*ROS-bridge endpoint*/ 
