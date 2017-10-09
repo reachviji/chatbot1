@@ -38,9 +38,9 @@ function senddatatows(speech) {
 	var no_skipping_factor = 1; 
 	/*ROS-bridge endpoint*/ 
 	
-	var ros = new ROSLIB.Ros({
+	/*var ros = new ROSLIB.Ros({
 		url : 'ws://localhost:9090'
-	});
+	}); */
 	
 	/*webSocket Cloud options*/ 
 	var ws_client_state = "offline"; 
@@ -65,7 +65,7 @@ function senddatatows(speech) {
 	*/ 
 	/*State of ROS-BRIDGE connection*/ 
  
-	var ros_bridge_state = 'offline'; 
+	/* var ros_bridge_state = 'offline'; 
  
 	ros.on('connection', function() { 
 	  ros_bridge_state = "Connected"; 
@@ -97,11 +97,11 @@ function senddatatows(speech) {
 	});
 
 	console.log("Publishing chatbot");
-	speak.publish(str);
+	speak.publish(str); */
 	 
  
 }
 
-restService.listen((process.env.PORT || 9090), function() {
+restService.listen((process.env.PORT || 8000), function() {
     console.log("Server up and listening");
 });
